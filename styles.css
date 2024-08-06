@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Megrim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/bg-1.jpg');
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'Dosis';
+    position: fixed;
+    top: 30px;
+    z-index: 10;
+    background: transparent;
+    border-bottom: none;
+    padding: 0.5rem;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    max-width: 1250px; 
+}
+
+.navbar-items {
+    display: flex;
+    width: 15000px;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Logo */
+.navbar-logo {
+    height: 40px;
+    width: auto; 
+    flex: 0 1 auto;
+}
+
+.navbar-nav-left, .navbar-nav-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-nav-left {
+    margin-right: auto;
+}
+
+.navbar-nav-right {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #cccccc;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('./assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    margin-top: -70px; 
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    height: 100%; 
+    width: 500px;
+    padding: 0 1rem; 
+}
+
+.hero .hero-text {
+    font-family: 'Megrim';
+    font-size: 4rem;
+    margin-top: 250px;
+}
+
+.hero .btn {
+    background-color: #7b7f5d;
+    border: none;
+    font-family: 'Dosis';
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: inline-block; 
+    width: 1520px;    
+    padding: 12px 24px;
+    box-sizing: border-box;
+}
+
+.hero-button:hover {
+    background-color: #6a6d4e;
+}
+
+.hero-content .btn-primary {
+    background-color: #7b7f5d !important; 
+    color: #fff !important; 
+    border: none !important; 
+}
+
+.hero-content .btn-primary:hover {
+    background-color: #6a6d4e !important; 
+}
+
+/* Services Section */
+.artists {
+    padding: 3rem 0.5rem;
+}
+
+.artists-title {
+    font-family: 'Megrim';
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.artists-def {
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+    font-family: Dosis;
+    font-size: 14px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 3rem 0.5rem;
+    background-image: url('./assets/bg-2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white; 
+}
+
+.img-fluid {
+    margin-bottom: 1rem;
+    border: 2px solid white; 
+    border-radius: 5px; 
+}
+
+.text-center .btn-primary {
+    background-color: #7b7f5d !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.text-center .btn-primary:hover {
+    background-color: #6a6d4e !important;
+}
+
+/* Services Section */
+.services-section {
+    background: url('./assets/bg-3.jpg') no-repeat center center;
+    padding: 60px 0;
+    background-color: #fff; 
+    font-family: Megrim;
+  }
+  
+  .services-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #fff;
+  }
+  
+  .services-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    color: #fff;
+  }
+  
+  .services-section p {
+    text-align: center; 
+    font-size: 14px; 
+    color: #ffffff; 
+    margin-bottom: 40px; 
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+  
+  .service {
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px); 
+    text-align: center; 
+    position: relative; 
+  }
+  
+  .service-title {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #fff; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    padding: 15px 20px; 
+    border-radius: 5px; 
+    display: inline-block; 
+    background-color: transparent; 
+  }
+  
+  .service-title:hover {
+    background-color: #7b7f5d; 
+    color: #fff; 
+  }
+
+/*Our Works*/
+.our-works-section {
+    padding: 60px 0;
+    font-family: Megrim;
+  }
+  
+  .our-works-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .our-works-section h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 3.5em;
+    color: #000000; 
+  }
+  
+  .our-works-section p {
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 40px; 
+  }
+  
+  .carousel-inner {
+    max-height: 500px; 
+  }
+  
+  .carousel-item {
+    display: flex;
+  }
+  
+  .carousel-item img {
+    object-fit: cover; 
+    height: 100%; 
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #333; 
+    border-radius: 50%; 
+  }
+  
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: opacity 0.3s ease; 
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 0.8; 
+  }
+  
+  /* Section button */
+.text-center .btn {
+    display: inline-block; 
+    width: 500px; 
+    max-width: 100%; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    font-size: 1.2em; 
+    font-family: Dosis;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff; 
+    padding: 20px 0; 
+}
+
+.footer h6 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #fff; 
+    font-family: Megrim;
+}
+
+.footer .inkgie{
+    font-family: Megrim;
+    text-align: center;
+}
+
+.footer p,
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.footer ul {
+    padding-left: 0; 
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.footer ul li a:hover {
+    text-decoration: underline; 
+}
+
+.footer .social-media i {
+    color: #fff; 
+    font-size: 1.5em; 
+    margin-right: 15px; 
+}
+
+.footer .social-media i:hover {
+    color: #ccc; 
+}
+
+.footer .text-center p{
+    margin: 0;
+}
+
+.footer .tatoo{
+    font-family: Megrim;
+    text-align: center;
+}
+
+.footer .text-center p a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.footer .text-center p a:hover {
+    text-decoration: underline; 
+}
+
+/* Line separator style */
+.line-separator {
+    border-top: 1px solid #555; 
+    margin: 20px 0; 
+}
+
+.footer .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .col-md-4 h6 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #fff; 
+    font-family: Megrim;
+}
+
+.footer .col-md-4 p {
+    margin-bottom: 10px; 
+}
+
+.footer .social-media {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 20px; 
+}
+
+.footer .social-media i {
+    color: #000; 
+    font-size: 1.5em; 
+}
+
+.footer .social-media i:hover {
+    color: #555;
+}
+
+.copyright {
+    font-family: Dosis;
+    font-size: 12px;
+}
